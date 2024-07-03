@@ -1,5 +1,3 @@
-// client/src/App.js
-
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
@@ -18,8 +16,6 @@ function App() {
       })
       .catch((err) => console.error(err));
   }, []);
-
-  console.log(products);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
